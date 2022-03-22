@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3C9FA91D-57B4-544A-ED95-2FD76D03F5E1" name="T_RT_ITEM">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-03-22 13:11:43 UTC</createdTime>
+<ownerDesignName>Projeto_Logico_RioTec</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NR_NOTA_VENDA1" id="F934E57E-1DB9-CF33-346A-E37362E51A07">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-03-22 13:12:57 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária dos pedidos de venda da Rio Tec. Esse conteúdo é sequencial por Filial e deve ser preenchido automaticamente pela aplicação.]]></comment>
+<generatorID>4CACC48F-0C94-0BDC-C3D9-15E6716AA0CC</generatorID>
+<ownerDesignName>Projeto_Logico_RioTec</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<referedAttribute>B81CFF7C-8145-E357-E868-5954BF4C744B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_PRODUTO" id="32B78483-EDBC-5E67-7FA7-C033A9E3B274">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-03-22 13:14:07 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do produto existente na Rio Tec.  Esse conteúdo será preenchido automaticamente pela aplicação.]]></comment>
+<generatorID>165FFA73-C744-4620-6784-7DA4AAC270AF</generatorID>
+<ownerDesignName>Projeto_Logico_RioTec</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<referedAttribute>B0C34CA1-2CE1-296D-664D-88A9B0BB618D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_NOTA_VENDA" id="FD6DDADC-FE12-E3FF-062C-F3AFC61FC4EA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-03-22 13:11:43 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária dos pedidos de venda da Rio Tec. Esse conteúdo é sequencial por Filial e deve ser preenchido automaticamente pela aplicação.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária dos pedidos de venda da Rio Tec. Esse conteúdo é sequencial por Filial e deve ser preenchido automaticamente pela aplicação.
+]]></commentInRDBMS>
+<ownerDesignName>Projeto_Logico_RioTec</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_VENDA" id="977B486D-569C-D3AF-5182-D95E29BDDDDA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-03-22 13:11:43 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a data em que foi realizada a venda e gerada a nota fiscal para o cliente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a data em que foi realizada a venda e gerada a nota fiscal para o cliente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_Logico_RioTec</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_TOTAL_PEDIDO" id="2C1A509D-D2CB-379F-F4A9-DB47924D4727">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-03-22 13:11:43 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o valor total de pedido a ser pago pelo cliente.  Seu conteúdo é obrigatório e não pode receber valores negativos.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o valor total de pedido a ser pago pelo cliente.  Seu conteúdo é obrigatório e não pode receber valores negativos.]]></commentInRDBMS>
+<ownerDesignName>Projeto_Logico_RioTec</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="61A77662-CBFD-1EC5-3DE4-AC1C448770F9" name="PK_RT_PEDIDO_VENDA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2022-03-22 13:11:43 UTC</createdTime>
+<ownerDesignName>Projeto_Logico_RioTec</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FD6DDADC-FE12-E3FF-062C-F3AFC61FC4EA</attributeRef>
+<attributeRef>F934E57E-1DB9-CF33-346A-E37362E51A07</attributeRef>
+<attributeRef>32B78483-EDBC-5E67-7FA7-C033A9E3B274</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
